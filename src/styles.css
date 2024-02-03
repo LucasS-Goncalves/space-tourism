@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+:root{
+  --barlow-condensed: 'Barlow Condensed', sans-serif;
+  --bellefair: 'Bellefair', serif;
+  --dark-blue: #0B0D17;
+  --light-blue: #D0D6F9;
+  --white: #FFFFFF
+}
