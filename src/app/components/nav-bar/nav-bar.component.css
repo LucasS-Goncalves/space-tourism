@@ -6,10 +6,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  z-index: 1;
 }
 
 .header .button-container{
-  z-index: 3;
+  z-index: 4;
 }
 
 .header .button-container .close,
@@ -32,6 +33,7 @@
   color: white;
   transform: translateX(100%);
   transition: transform .3s;
+  z-index: 3;
 }
 
 .header.menuOpened .mobile-nav{
@@ -43,7 +45,22 @@
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+}
+
+.header .mobile-nav ul li{
+  position: relative;
+}
+
+.header .mobile-nav ul li.active::after{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  content: "";
+  width: 4px;
+  height: 31px;
+  background-color: var(--white);
 }
 
 .header .mobile-nav ul li a{
@@ -63,6 +80,20 @@
   text-transform: uppercase;
 }
 
+.header .overlay{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.header.menuOpened .overlay{
+  visibility: visible;
+}
 
 @media(min-width: 768px){
 
@@ -92,7 +123,25 @@
     align-items: center;
     gap: 50px;
     padding: 0 40px;
+    height: 100%;
+  }
 
+  .header .nav ul li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .header .nav ul li.active::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
   }
 
   .header .nav ul li a{
