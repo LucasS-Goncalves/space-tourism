@@ -90,13 +90,52 @@ section button{
     line-height: 150px;
     margin: 15px 0 ;
   }
+
+  section button{
+    width: 242px;
+    height: 242px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
 }
 
 @media(min-width: 1368px){
+
   .background-img{
+    height: 900px;
     background: url('../../../assets/home/background-home-desktop.jpg') no-repeat;
     background-position: right center;
     background-size: cover;
+  }
+
+  section{
+    top: 250px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 500px;
+  }
+
+  section article{
+    text-align: start;
+  }
+
+  section article p{
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
+
+  section article p:first-of-type{
+    font-size: 1.75rem;
+    letter-spacing: 4.72px;
+  }
+
+  section article h1{
+    margin: 40px 0 ;
+  }
+
+  section button{
+    width: 274px;
+    height: 274px;
   }
 }
 
