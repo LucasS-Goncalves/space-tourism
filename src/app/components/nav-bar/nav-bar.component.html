@@ -1,0 +1,42 @@
+<header class="header" [ngClass]="{'menuOpened': menuOpened}">
+  <img src="../../../assets/shared/logo.svg" alt="Logo">
+  <div class="button-container">
+    <button class="open" (click)="toggleMenu()">
+      <img src="../../../assets/shared/icon-hamburger.svg" alt="Menu icon" >
+    </button>
+    <button class="close" (click)="toggleMenu()">
+      <img src="../../../assets/shared/icon-close.svg" alt="Close menu icon" >
+    </button>
+  </div>
+  <nav class="mobile-nav">
+    <ul>
+      <li>
+        <a>
+          <span>00</span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a>
+          <span>01</span>
+          Destination
+        </a>
+      </li>
+      <li>
+        <a>
+          <span>02</span>
+          Crew
+        </a>
+      </li>
+      <li>
+        <a>
+          <span>03</span>
+          Technology
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="nav">
+
+  </nav>
+</header>
