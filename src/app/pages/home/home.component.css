@@ -62,7 +62,6 @@ section button{
 @media(min-width: 768px){
 
   .background-img{
-    /* height: 1024px; */
     background: url('../../../assets/home/background-home-tablet.jpg') no-repeat;
     background-position: center;
     background-size: cover;

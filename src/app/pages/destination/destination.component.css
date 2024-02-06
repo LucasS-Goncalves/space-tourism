@@ -1,0 +1,159 @@
+.background-img{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url('../../../assets/destination/background-destination-mobile.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: contrast(105%)
+}
+
+section{
+  width: 100%;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+section h1{
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--barlow-condensed);
+  color: var(--white);
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+section h1 span{
+  font-weight: 700;
+  opacity: .25;
+  margin-right: 15px;
+}
+
+section .container{
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+section .container img{
+  width: 170px;
+  height: 170px;
+}
+
+section .container .moons-info-article-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+section .container .moons-info-article-container .moons-list{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+section .container .moons-info-article-container .moons-list li{
+  color: var(--light-blue);
+  font-size: .875rem;
+  font-weight: 400;
+  font-family: var(--barlow-condensed);
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+}
+
+section .container .moons-info-article-container .moons-list li.active{
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
+}
+
+section .container .moons-info-article-container .moon-info-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+section .container .moons-info-article-container .moon-info-article h2{
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: var(--bellefair);
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+section .container .moons-info-article-container .moon-info-article p{
+  font-size: .9375rem;
+  font-weight: 400;
+  font-family: var(--barlow-condensed);
+  line-height: 25px;
+  color: var(--light-blue);
+}
+
+section .container .moons-info-article-container .horizontal-line{
+  width: 100%;
+  height: 1px;
+  background-color: #383B4B;
+  margin: 12px 0;
+}
+
+section .container .moons-info-article-container .distance-travelTime-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+section .container .moons-info-article-container .distance-travelTime-article div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+section .container .moons-info-article-container .distance-travelTime-article div .title{
+  color: var(--light-blue);
+  font-weight: 400;
+  font-size: .875rem;
+  font-family: var(--barlow-condensed);
+  letter-spacing: 2.36px;
+}
+
+section .container .moons-info-article-container .distance-travelTime-article div .number-info{
+  font-family: var(--bellefair);
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+@media(min-width: 768px){
+
+  .background-img{
+    background: url('../../../assets/destination/background-destination-tablet.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+@media(min-width: 1368px){
+
+  .background-img{
+    background: url('../../../assets/destination/background-destination-desktop.jpg') no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
+}
+
