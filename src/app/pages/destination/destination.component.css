@@ -5,7 +5,7 @@
   background: url('../../../assets/destination/background-destination-mobile.jpg') no-repeat;
   background-position: center;
   background-size: cover;
-  filter: contrast(105%)
+  filter: contrast(105%);
 }
 
 section{
@@ -33,7 +33,7 @@ section h1{
 section h1 span{
   font-weight: 700;
   opacity: .25;
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 section .container{
@@ -69,6 +69,7 @@ section .container .moons-info-article-container .moons-list li{
   font-family: var(--barlow-condensed);
   letter-spacing: 2.36px;
   text-transform: uppercase;
+  padding-bottom: 11px;
 }
 
 section .container .moons-info-article-container .moons-list li.active{
@@ -138,6 +139,12 @@ section .container .moons-info-article-container .distance-travelTime-article di
   font-weight: 400;
 }
 
+section .container .moons-info-article-container .distance-travelTime-article{
+  flex-direction: row;
+  align-items: center;
+  gap: 120px;
+}
+
 @media(min-width: 768px){
 
   .background-img{
@@ -145,6 +152,55 @@ section .container .moons-info-article-container .distance-travelTime-article di
     background-position: center;
     background-size: cover;
   }
+
+  section{
+    top: 180px;
+    gap: 50px;
+  }
+
+  section h1{
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+
+  section .container{
+    width: 573px;
+    gap: 30px;
+  }
+
+  section .container img{
+    width: 300px;
+    height: 300px;
+  }
+
+  section .container .moons-info-article-container{
+    gap: 30px;
+  }
+
+  section .container .moons-info-article-container .moons-list{
+    gap: 40px;
+  }
+
+  section .container .moons-info-article-container .moons-list li{
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  section .container .moons-info-article-container .moon-info-article{
+    gap: 20px;
+  }
+
+  section .container .moons-info-article-container .moon-info-article h2{
+    font-size: 5rem;
+  }
+
+  section .container .moons-info-article-container .moon-info-article p{
+    font-size: 1rem;
+    line-height: 28px;
+  }
+
 }
 
 
@@ -155,5 +211,55 @@ section .container .moons-info-article-container .distance-travelTime-article di
     background-position: right center;
     background-size: cover;
   }
+
+  section{
+    top: 240px;
+    gap: 80px;
+  }
+
+  section h1{
+    font-size: 1.75rem;
+    letter-spacing: 4.72px;
+    margin-left: 50px;
+  }
+
+  section .container{
+    width: auto;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 150px;
+  }
+
+  section .container img{
+    width: 445px;
+    height: 445px;
+  }
+
+  section .container .moons-info-article-container{
+    width: 445px;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: start;
+  }
+
+  section .container .moons-info-article-container .moon-info-article{
+    align-items: flex-start;
+    gap: 15px;
+    text-align: start;
+  }
+
+  section .container .moons-info-article-container .moon-info-article h2{
+    font-size: 6.25rem;
+  }
+
+  section .container .moons-info-article-container .moon-info-article p{
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
+
+  section .container .moons-info-article-container .distance-travelTime-article div{
+    align-items: flex-start;
+  }
+
 }
 
