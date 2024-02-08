@@ -67,7 +67,6 @@ export class DestinationComponent implements OnInit{
     this.currentIndex = index;
     this.setCurrentDestination(this.currentIndex);
     this.toggleClasses();
-
   }
 
   private toggleClasses(): void{
