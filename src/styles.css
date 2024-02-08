@@ -9,6 +9,40 @@
   --white: #FFFFFF;
 }
 
+@keyframes loadingRouter{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes imageTransition{
+  0%{
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes textTransition{
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 *{
   box-sizing: border-box;
   padding: 0;

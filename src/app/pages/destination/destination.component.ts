@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Destination } from 'src/app/_interfaces/destination';
 
 @Component({
@@ -6,7 +6,21 @@ import { Destination } from 'src/app/_interfaces/destination';
   templateUrl: './destination.component.html',
   styleUrls: ['./destination.component.css']
 })
-export class DestinationComponent {
+export class DestinationComponent implements OnInit{
+
+  @ViewChild('destinationImg') destinationImg!: ElementRef<HTMLImageElement>;
+  @ViewChild('moonInfoArticle') moonInfoArticle!: ElementRef<HTMLElement>;
+  @ViewChild('distanceTravelTimeArticle') distanceTravelTimeArticle!: ElementRef<HTMLElement>;
+
+  currentDestination: Destination = {
+    name: '',
+    image: '',
+    description: '',
+    distance: '',
+    travel: '',
+    active: false
+  };
+
   destinations: Destination[] = [
     {
       name: "Moon",
@@ -14,7 +28,7 @@ export class DestinationComponent {
       description: "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
       distance: "384,400 km",
       travel: "3 days",
-      active: true
+      active: false
     },
     {
       name: "Mars",
@@ -44,12 +58,32 @@ export class DestinationComponent {
 
   currentIndex = 0;
 
+  ngOnInit(): void {
+    this.setCurrentDestination(this.currentIndex);
+  }
+
   changeDestination(index: number): void{
     if(this.currentIndex === index) return;
     this.currentIndex = index;
+    this.setCurrentDestination(this.currentIndex);
+    this.toggleClasses();
+
   }
 
-  getCurrentImage(index: number): string{
-    return this.destinations[index].image;
+  private toggleClasses(): void{
+    this.destinationImg.nativeElement.classList.add('active');
+    this.moonInfoArticle.nativeElement.classList.add('active');
+    this.distanceTravelTimeArticle.nativeElement.classList.add('active');
+    setTimeout(() => {
+      this.destinationImg.nativeElement.classList.remove('active');
+      this.moonInfoArticle.nativeElement.classList.remove('active');
+      this.distanceTravelTimeArticle.nativeElement.classList.remove('active');
+    }, 500)
+  }
+
+  private setCurrentDestination(index: number): void{
+    this.currentDestination.active = false;
+    this.currentDestination = this.destinations[index];
+    this.currentDestination.active = true;
   }
 }

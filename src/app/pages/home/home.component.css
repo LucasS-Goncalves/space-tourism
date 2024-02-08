@@ -18,6 +18,7 @@ section{
   align-items: center;
   gap: 80px;
   padding-bottom: 50px;
+  animation: loadingRouter 1.5s;
 }
 
 section article{
@@ -31,6 +32,7 @@ section article p{
   color: var(--light-blue);
   font-size: .9375rem;
   line-height: 25px;
+
 }
 
 section article p:first-of-type{

@@ -5,29 +5,29 @@
     Pick your destination
   </h1>
   <article class="container">
-    <img [src]="getCurrentImage(currentIndex)" alt="">
+    <img [src]="currentDestination.image" [alt]="currentDestination.name" #destinationImg>
     <article class="moons-info-article-container">
       <ul class="moons-list">
         <li [ngClass]="{'active': destination.active}" *ngFor="let destination of destinations; let i = index" (click)="changeDestination(i)">
           {{destination.name}}
         </li>
       </ul>
-      <article class="moon-info-article">
+      <article class="moon-info-article" #moonInfoArticle>
         <h2>
-          Moon
+          {{currentDestination.name}}
         </h2>
         <p>
-          See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+          {{currentDestination.description}}
         </p>
       </article>
       <span class="horizontal-line"></span>
-      <article class="distance-travelTime-article">
+      <article class="distance-travelTime-article" #distanceTravelTimeArticle>
         <div>
           <p class="title">
             AVG. DISTANCE
           </p>
           <p class="number-info">
-            384,400 km
+            {{currentDestination.distance}}
           </p>
         </div>
         <div>
@@ -35,7 +35,7 @@
             Est. travel time
           </p>
           <p class="number-info">
-            3 days
+            {{currentDestination.travel}}
           </p>
         </div>
       </article>

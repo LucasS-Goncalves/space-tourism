@@ -19,6 +19,7 @@ section{
   align-items: center;
   gap: 40px;
   padding-bottom: 80px;
+  animation: loadingRouter 1.2s;
 }
 
 section h1{
@@ -47,6 +48,11 @@ section .container{
 section .container img{
   width: 170px;
   height: 170px;
+  transition: .3s;
+}
+
+section .container img.active{
+  animation: imageTransition .5s;
 }
 
 section .container .moons-info-article-container{
@@ -86,6 +92,10 @@ section .container .moons-info-article-container .moon-info-article{
   text-align: center;
 }
 
+section .container .moons-info-article-container .moon-info-article.active{
+  animation: textTransition .5s;
+}
+
 section .container .moons-info-article-container .moon-info-article h2{
   font-size: 3.5rem;
   font-weight: 400;
@@ -95,6 +105,7 @@ section .container .moons-info-article-container .moon-info-article h2{
 }
 
 section .container .moons-info-article-container .moon-info-article p{
+  height: 130px;
   font-size: .9375rem;
   font-weight: 400;
   font-family: var(--barlow-condensed);
@@ -116,6 +127,11 @@ section .container .moons-info-article-container .distance-travelTime-article{
   gap: 30px;
   text-align: center;
 }
+
+section .container .moons-info-article-container .distance-travelTime-article.active{
+  animation: textTransition .5s;
+}
+
 
 section .container .moons-info-article-container .distance-travelTime-article div{
   display: flex;
@@ -198,12 +214,11 @@ section .container .moons-info-article-container .distance-travelTime-article{
   }
 
   section .container .moons-info-article-container .moon-info-article p{
+    height: 90px;
     font-size: 1rem;
     line-height: 28px;
   }
-
 }
-
 
 @media(min-width: 1368px){
 
@@ -214,7 +229,7 @@ section .container .moons-info-article-container .distance-travelTime-article{
   }
 
   section{
-    top: 240px;
+    top: 220px;
     gap: 80px;
   }
 
@@ -254,8 +269,30 @@ section .container .moons-info-article-container .distance-travelTime-article{
   }
 
   section .container .moons-info-article-container .moon-info-article p{
+    height: 130px;
     font-size: 1.125rem;
     line-height: 32px;
+  }
+
+  section .container .moons-info-article-container .moons-list li{
+    cursor: pointer;
+    position: relative;
+  }
+
+  section .container .moons-info-article-container .moons-list li::after{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2.4px;
+    opacity: .5;
+    background-color: var(--white);
+    transition: .3s;
+  }
+
+  section .container .moons-info-article-container .moons-list li:not(.active):hover::after{
+    width: 100%;
   }
 
   section .container .moons-info-article-container .distance-travelTime-article div{
