@@ -5,20 +5,11 @@
     Pick your destination
   </h1>
   <article class="container">
-    <img src="../../../assets/destination/image-moon.png" alt="">
+    <img [src]="getCurrentImage(currentIndex)" alt="">
     <article class="moons-info-article-container">
       <ul class="moons-list">
-        <li class="active">
-          Moon
-        </li>
-        <li>
-          Mars
-        </li>
-        <li>
-          Europa
-        </li>
-        <li>
-          Titan
+        <li [ngClass]="{'active': destination.active}" *ngFor="let destination of destinations; let i = index" (click)="changeDestination(i)">
+          {{destination.name}}
         </li>
       </ul>
       <article class="moon-info-article">
