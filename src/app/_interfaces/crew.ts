@@ -3,4 +3,5 @@ export interface CrewMember{
   role: string;
   bio: string;
   image: string;
+  active: boolean
 }
