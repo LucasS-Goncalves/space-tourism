@@ -191,10 +191,11 @@ section .container .info-container .member-info-article .bio{
   }
 
   section .container{
-    width: auto;
+    width: 1210px;
     flex-direction: row-reverse;
-    align-items: center;
-    gap: 150px;
+    align-items: flex-start;
+    gap: 0;
+    justify-content: space-between;
   }
 
   section .container img{
@@ -202,12 +203,13 @@ section .container .info-container .member-info-article .bio{
   }
 
   section .container .info-container{
-    gap: 120px;
+    gap: 80px;
     align-items: flex-start;
+    margin-top: 40px;
   }
 
   section .container .info-container .member-info-article{
-    width: 490px;
+
     align-items: flex-start;
     text-align: start;
   }
@@ -229,6 +231,7 @@ section .container .info-container .member-info-article .bio{
 
   section .container .info-container .member-info-article .bio{
     width: 360px;
+    height: 160px;
     font-size: 1.125rem;
     line-height: 32px;
   }
