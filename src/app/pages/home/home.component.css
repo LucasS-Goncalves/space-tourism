@@ -18,7 +18,7 @@ section{
   align-items: center;
   gap: 80px;
   padding-bottom: 50px;
-  animation: loadingRouter 1.5s;
+  animation: loadingRouter 1.2s;
 }
 
 section article{
