@@ -18,7 +18,7 @@ section{
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   animation: loadingRouter 1.2s;
 }
 
@@ -148,7 +148,6 @@ section .container .info-container .member-info-article .bio{
 
   section .container img{
     width: 400px;
-    transition: .3s;
   }
 
   section .container .info-container{
@@ -178,4 +177,60 @@ section .container .info-container .member-info-article .bio{
     background-position: right center;
     background-size: cover;
   }
+
+  section{
+    width: auto;
+    top: 200px;
+    gap: 20px;
+  }
+
+  section h1{
+    font-size: 1.75rem;
+    letter-spacing: 4.72px;
+    margin-left: 0;
+  }
+
+  section .container{
+    width: auto;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 150px;
+  }
+
+  section .container img{
+    width: 500px;
+  }
+
+  section .container .info-container{
+    gap: 120px;
+    align-items: flex-start;
+  }
+
+  section .container .info-container .member-info-article{
+    width: 490px;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  section .container .info-container .slider-dots li div{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  section .container .info-container .member-info-article .role{
+    font-size: 2rem;
+  }
+
+  section .container .info-container .member-info-article .name{
+    font-size: 3.5rem;
+    margin: 18px 0 25px 0;
+  }
+
+  section .container .info-container .member-info-article .bio{
+    width: 360px;
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
+
 }
