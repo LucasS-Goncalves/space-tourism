@@ -61,7 +61,8 @@ section .container .info-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
+  margin-top: 16px;
 }
 
 section .container .info-container .slider-dots{
@@ -80,6 +81,39 @@ section .container .info-container .slider-dots li div{
 
 section .container .info-container .slider-dots li.active div{
   opacity: 1;
+}
+
+section .container .info-container .member-info-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section .container .info-container .member-info-article .role{
+  color: var(--white);
+  opacity: .5;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--bellefair);
+  text-transform: uppercase;
+}
+
+section .container .info-container .member-info-article .name{
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--bellefair);
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 10px 0 18px 0;
+}
+
+section .container .info-container .member-info-article .bio{
+  font-size: .9375rem;
+  font-weight: 400;
+  font-family: var(--barlow-condensed);
+  color: var(--light-blue);
+  line-height: 25px;
 }
 
 @media(min-width: 768px){
