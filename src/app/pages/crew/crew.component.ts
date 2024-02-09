@@ -51,5 +51,6 @@ export class CrewComponent implements OnInit{
 
   ngOnInit(): void {
     this.currentCrewMember = this.crewMembers[this.currentIndex];
+    this.currentCrewMember.active = true;
   }
 }

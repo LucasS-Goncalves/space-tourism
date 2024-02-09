@@ -78,6 +78,10 @@ section .container .info-container .slider-dots li div{
   opacity: .17;
 }
 
+section .container .info-container .slider-dots li.active div{
+  opacity: 1;
+}
+
 @media(min-width: 768px){
 
   .background-img{

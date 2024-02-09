@@ -9,7 +9,7 @@
     <span class="horizontal-line"></span>
     <article class="info-container">
       <ul class="slider-dots">
-        <li *ngFor="let crewMember of crewMembers">
+        <li *ngFor="let crewMember of crewMembers" [ngClass]="{'active': crewMember.active}">
           <div></div>
         </li>
       </ul>
