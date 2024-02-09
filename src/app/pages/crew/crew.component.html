@@ -7,13 +7,13 @@
   <article class="container">
     <img [src]="currentCrewMember.image" [alt]="currentCrewMember.name + 'photo'">
     <span class="horizontal-line"></span>
-    <article class="moons-info-article-container">
+    <article class="info-container">
       <ul class="slider-dots">
-        <li *ngFor="let crewMember in crewMembers">
+        <li *ngFor="let crewMember of crewMembers">
           <div></div>
         </li>
       </ul>
-      <article class="moon-info-article" #moonInfoArticle>
+      <article class="member-info-article">
         <h3>
           {{currentCrewMember.role}}
         </h3>
