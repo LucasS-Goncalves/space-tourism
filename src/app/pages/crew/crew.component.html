@@ -5,15 +5,15 @@
     Meet your crew
   </h1>
   <article class="container">
-    <img [src]="currentCrewMember.image" [alt]="currentCrewMember.name + 'photo'">
+    <img [src]="currentCrewMember.image" [alt]="currentCrewMember.name + 'photo'" #crewMemberImg>
     <span class="horizontal-line"></span>
     <article class="info-container">
       <ul class="slider-dots">
-        <li *ngFor="let crewMember of crewMembers" [ngClass]="{'active': crewMember.active}">
+        <li *ngFor="let crewMember of crewMembers; let i = index" [ngClass]="{'active': crewMember.active}" (click)="changeCrewMember(i)">
           <div></div>
         </li>
       </ul>
-      <article class="member-info-article">
+      <article class="member-info-article" #memberInfoArticle>
         <h3 class="role">
           {{currentCrewMember.role}}
         </h3>

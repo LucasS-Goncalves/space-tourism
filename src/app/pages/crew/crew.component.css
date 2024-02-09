@@ -18,7 +18,6 @@ section{
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  /* padding-bottom: 80px; */
   animation: loadingRouter 1.2s;
 }
 
@@ -47,6 +46,10 @@ section .container{
 section .container img{
   width: 177px;
   transition: .3s;
+}
+
+section .container img.active{
+  animation: imageTransitionFromRight .5s;
 }
 
 section .container .horizontal-line{
@@ -88,6 +91,10 @@ section .container .info-container .member-info-article{
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+section .container .info-container .member-info-article.active{
+  animation: textTransitionFromLeft .5s;
 }
 
 section .container .info-container .member-info-article .role{

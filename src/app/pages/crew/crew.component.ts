@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CrewMember } from 'src/app/_interfaces/crew';
 
 @Component({
@@ -49,8 +49,32 @@ export class CrewComponent implements OnInit{
     }
   ];
 
+  @ViewChild('crewMemberImg') crewMemberImg!: ElementRef<HTMLImageElement>;
+  @ViewChild('memberInfoArticle') memberInfoArticle!: ElementRef<HTMLElement>;
+
   ngOnInit(): void {
-    this.currentCrewMember = this.crewMembers[this.currentIndex];
+    this.setCurrentCrewMember(this.currentIndex);
+  }
+
+  changeCrewMember(index: number): void{
+    if(this.currentIndex === index) return;
+    this.currentIndex = index;
+    this.setCurrentCrewMember(this.currentIndex);
+    this.toggleClasses();
+  }
+
+  private toggleClasses(): void{
+    this.crewMemberImg.nativeElement.classList.add('active');
+    this.memberInfoArticle.nativeElement.classList.add('active');
+    setTimeout(() => {
+      this.crewMemberImg.nativeElement.classList.remove('active');
+      this.memberInfoArticle.nativeElement.classList.remove('active');
+    }, 500)
+  };
+
+  private setCurrentCrewMember(index: number): void{
+    this.currentCrewMember.active = false;
+    this.currentCrewMember = this.crewMembers[index];
     this.currentCrewMember.active = true;
   }
 }
