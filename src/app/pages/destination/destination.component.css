@@ -52,7 +52,7 @@ section .container img{
 }
 
 section .container img.active{
-  animation: imageTransition .5s;
+  animation: imageTransitionFromLeft .5s;
 }
 
 section .container .moons-info-article-container{
@@ -93,7 +93,7 @@ section .container .moons-info-article-container .moon-info-article{
 }
 
 section .container .moons-info-article-container .moon-info-article.active{
-  animation: textTransition .5s;
+  animation: textTransitionFromRight .5s;
 }
 
 section .container .moons-info-article-container .moon-info-article h2{
@@ -129,7 +129,7 @@ section .container .moons-info-article-container .distance-travelTime-article{
 }
 
 section .container .moons-info-article-container .distance-travelTime-article.active{
-  animation: textTransition .5s;
+  animation: textTransitionFromRight .5s;
 }
 
 
