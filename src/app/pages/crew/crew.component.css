@@ -37,7 +37,6 @@ section h1 span{
   margin-right: 12px;
 }
 
-
 section .container{
   width: 327px;
   display: flex;
@@ -123,6 +122,52 @@ section .container .info-container .member-info-article .bio{
     background: url('../../../assets/crew/background-crew-tablet.jpg') no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  section{
+    top: 150px;
+    gap: 60px;
+  }
+
+  section h1{
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+
+  section .container{
+    width: 458px;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  section .container .horizontal-line{
+    display: none;
+  }
+
+  section .container img{
+    width: 400px;
+    transition: .3s;
+  }
+
+  section .container .info-container{
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin-top: 0;
+  }
+
+  section .container .info-container .member-info-article .role{
+    font-size: 1.5rem;
+  }
+
+  section .container .info-container .member-info-article .name{
+    font-size: 2.5rem;
+  }
+
+  section .container .info-container .member-info-article .bio{
+    font-size: 1rem;
+    line-height: 28px;
   }
 }
 
