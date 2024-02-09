@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes imageTransition{
+@keyframes imageTransitionFromLeft{
   0%{
     opacity: 0;
     transform: translateX(-80px);
@@ -31,10 +31,34 @@
   }
 }
 
-@keyframes textTransition{
+@keyframes textTransitionFromRight{
   0%{
     opacity: 0;
     transform: translateX(80px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes imageTransitionFromRight{
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes textTransitionFromLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-80px);
   }
 
   100%{
