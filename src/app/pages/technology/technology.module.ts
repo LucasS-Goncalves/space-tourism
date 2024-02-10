@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TechnologyComponent } from './technology.component';
+import { RouterModule } from '@angular/router';
+import { appTechnologyRoutes } from './app-technology.routes';
 
 
 
@@ -9,7 +11,8 @@ import { TechnologyComponent } from './technology.component';
     TechnologyComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(appTechnologyRoutes)
   ]
 })
 export class TechnologyModule { }
