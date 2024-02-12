@@ -9,6 +9,16 @@
   --white: #FFFFFF;
 }
 
+@keyframes defaultLoading{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
 @keyframes loadingRouter{
   0%{
     opacity: 0;

@@ -5,22 +5,29 @@
     SPACE LAUNCH 101
   </h1>
   <article class="container">
-    <img [src]="" [alt]=" + 'photo'">
+    <div class="img-container" #technologyImg>
+      <picture>
+        <source media="(max-width: 767px)" [srcset]="currentTechnology.images.mobile">
+        <source media="(max-width: 1367px)" [srcset]="currentTechnology.images.tablet">
+        <source media="(min-width: 1368px)" [srcset]="currentTechnology.images.desktop">
+        <img [src]="currentTechnology.images.mobile" [alt]=" + 'photo'">
+      </picture>
+    </div>
     <article class="info-container">
-      <ul class="slider-dots">
-        <li>
-          <div></div>
+      <ul class="slider" >
+        <li *ngFor="let technology of technologies; let i = index" (click)="changeTechnology(i)"  [ngClass]="{'active': technology.active}">
+          <div>{{ i + 1 }}</div>
         </li>
       </ul>
-      <article class="member-info-article">
+      <article class="tech-info-article" #technologyInfoArticle>
         <h3 class="role">
-
+          THE TERMINOLOGY…
         </h3>
         <h2 class="name">
-
+          {{currentTechnology.name}}
         </h2>
-        <p class="bio">
-
+        <p class="description">
+          {{currentTechnology.description}}
         </p>
       </article>
     </article>
