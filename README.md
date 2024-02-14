@@ -2,7 +2,7 @@
 
 <h2>//EN//</h2>
 
-<p>This is the Space Tourism project. This is a project about space tourism, where you can see destinations, the crews and technologies used. I built this project using Angular, Typescript, HTML and CSS.</p>
+<p>This is the Space Tourism project. This is a project about space tourism, where you can see the destinations, the crew and technologies used. I built this project using Angular, Typescript, HTML and CSS.</p>
 
 <p>The project is responsive!</p>
 
@@ -11,7 +11,7 @@
 
 <h2>//PT-BR//</h2>
 
-<p>Este é o projeto Space Tourism. Este projeto é sobre turismo espacial, onde você pode ver os destinos, a tripulação e as tecnologias usadas na viajem. Eu construí este projeto usando Angular, Typescript, HTML e CSS.</p>
+<p>Este é o projeto Space Tourism. Este projeto é sobre turismo espacial, onde você pode ver os destinos, a tripulação e as tecnologias usadas na viagem. Eu construí este projeto usando Angular, Typescript, HTML e CSS.</p>
 
 <p>O projeto é responsivo!</p>
 
