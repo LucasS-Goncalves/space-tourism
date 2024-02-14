@@ -22,10 +22,13 @@
 <h4>Images</h4>
 
 <p>Mobile</p>
+
 ![mobile](https://github.com/LucasS-Goncalves/space-tourism/assets/122225674/1ce4c605-b526-4039-8777-89f1d4d180f8)
 <hr>
 <p>Tablet</p>
+
 ![tablet](https://github.com/LucasS-Goncalves/space-tourism/assets/122225674/30bed705-a8f9-4c92-8f14-fe7c44fdfc5e)
 <hr>
 <p>Desktop</p>
+
 ![desktop](https://github.com/LucasS-Goncalves/space-tourism/assets/122225674/6cffa691-a265-4aa0-86ed-d746aba6f382)
