@@ -11,7 +11,7 @@
 
 <h2>//PT-BR//</h2>
 
-<p>Este é o projeto Space Tourism. Este projeto é sobre turismo espacial, onde você pode ver os destinos, a tripulação e as tecnologies usadas na viajem. Eu construí este projeto usando Angular, Typescript, HTML e CSS.</p>
+<p>Este é o projeto Space Tourism. Este projeto é sobre turismo espacial, onde você pode ver os destinos, a tripulação e as tecnologias usadas na viajem. Eu construí este projeto usando Angular, Typescript, HTML e CSS.</p>
 
 <p>O projeto é responsivo!</p>
 
