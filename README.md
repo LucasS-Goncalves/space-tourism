@@ -1,27 +1,31 @@
-# SpaceTourism
+<h1>Space Tourism</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+<h2>//EN//</h2>
 
-## Development server
+<p>This is the Space Tourism project. This is a project about space tourism, where you can see destinations, the crews and technologies used. I built this project using Angular, Typescript, HTML and CSS.</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p>The project is responsive!</p>
 
-## Code scaffolding
+<p> I posted this project on my LinkedIn! Check it out here: https://www.linkedin.com/in/lucas-gon%C3%A7alves-3a2662252/ </p>
+<p> Live demo: https://space-tourism-lime-alpha.vercel.app/</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2>//PT-BR//</h2>
 
-## Build
+<p>Este é o projeto Space Tourism. Este projeto é sobre turismo espacial, onde você pode ver os destinos, a tripulação e as tecnologies usadas na viajem. Eu construí este projeto usando Angular, Typescript, HTML e CSS.</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p>O projeto é responsivo!</p>
 
-## Running unit tests
+<p>Eu postei este projeto no meu LinkedIn! Confira aqui: https://www.linkedin.com/in/lucas-gon%C3%A7alves-3a2662252/</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p>Deploy: https://space-tourism-lime-alpha.vercel.app/</p>
 
-## Running end-to-end tests
+<h4>Images</h4>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p>Mobile</p>
+![mobile](https://github.com/LucasS-Goncalves/space-tourism/assets/122225674/1ce4c605-b526-4039-8777-89f1d4d180f8)
+<hr>
+<p>Tablet</p>
+![tablet](https://github.com/LucasS-Goncalves/space-tourism/assets/122225674/30bed705-a8f9-4c92-8f14-fe7c44fdfc5e)
+<hr>
+<p>Desktop</p>
+![desktop](https://github.com/LucasS-Goncalves/space-tourism/assets/122225674/6cffa691-a265-4aa0-86ed-d746aba6f382)
